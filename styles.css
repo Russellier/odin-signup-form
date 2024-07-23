@@ -44,6 +44,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+@font-face {
+  font-family: norse-bold;
+  src: url(Norse-Bold.otf);
+}
+
 body {
   display: flex;
 }
@@ -62,10 +67,23 @@ body {
   background-color: #00000062;
   float: top;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-image {
   height: 100vh;
+}
+
+.logo-img {
+  height: 4rem;
+}
+
+.img-container > div > p {
+  font-size: 3rem;
+  font-family: norse-bold, arial;
+  color: white;
 }
 
 ul {
