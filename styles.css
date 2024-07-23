@@ -52,8 +52,19 @@ body {
   width: 35vw;
   height: 100vh;
   /* background-image: url(images/hao-qin-eo0rWDA_-IA-unsplash.jpg); */
-  background-color: aquamarine;
+  background-color: lightblue;
   flex-shrink: 0;
+}
+
+.img-container > div {
+  width: 100%;
+  height: 5rem;
+  margin-top: 10rem;
+  background-color: #8080805d;
+}
+
+.bg-image {
+  height: 100vh;
 }
 
 ul {
