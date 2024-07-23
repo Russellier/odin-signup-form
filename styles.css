@@ -43,3 +43,28 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+body {
+  display: flex;
+}
+
+.img-container {
+  width: 35vw;
+  height: 100vh;
+  /* background-image: url(images/hao-qin-eo0rWDA_-IA-unsplash.jpg); */
+  background-color: aquamarine;
+  flex-shrink: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
+
+li > div {
+  display: flex;
+  flex-direction: column;
+}

@@ -7,9 +7,7 @@
     <title>Sign Up</title>
   </head>
   <body>
-    <div class="img-container">
-      <img src="images/hao-qin-eo0rWDA_-IA-unsplash.jpg" width="300vw" />
-    </div>
+    <div class="img-container"></div>
     <div>
       <p>
         This is not a real online service! You know you need something like this
@@ -20,33 +18,46 @@
       <form action="" method="get">
         <ul>
           <li class="name">
-            <label for="first-name">First Name</label>
-            <input id="first-name" name="first-name" type="text" />
+            <div>
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="first-name" type="text" />
+            </div>
 
-            <label for="last-name">Last Name</label>
-            <input id="last-name" name="last-name" type="text" />
+            <div>
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last-name" type="text" />
+            </div>
           </li>
           <li class="contact-info">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" />
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
 
-            <label for="number">Phone Number</label>
-            <input id="number" name="number" type="text" />
+            <div>
+              <label for="number">Phone Number</label>
+              <input id="number" name="number" type="text" />
+            </div>
           </li>
           <li class="password">
-            <label for="new-password">Password</label>
-            <input id="new-password" name="new-password" type="password" />
+            <div>
+              <label for="new-password">Password</label>
+              <input id="new-password" name="new-password" type="password" />
+            </div>
 
-            <label for="password-confirmation">Confirm Password</label>
-            <input
-              id="password-confirmation"
-              name="password-confirmation"
-              type="password"
-            />
+            <div>
+              <label for="password-confirmation">Confirm Password</label>
+              <input
+                id="password-confirmation"
+                name="password-confirmation"
+                type="password"
+              />
+            </div>
           </li>
         </ul>
         <button type="submit">Create Account</button>
       </form>
+      <p>Already have an account? Log in</p>
     </div>
   </body>
 </html>
