@@ -147,7 +147,7 @@ label {
 
 input {
   font-size: 0.8rem;
-  color: var(--font-color1)
+  color: var(--font-color1);
   height: 1.2rem;
   border: 1.5px solid var(--shadow-color);
   border-radius: 2px;
