@@ -46,6 +46,7 @@ h6 {
 
 :root {
   --shadow-color: #a8a8a8;
+  --dull-orange: #d37e4d;
 }
 
 @font-face {
@@ -55,6 +56,7 @@ h6 {
 
 body {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-container {
@@ -67,7 +69,7 @@ body {
 .img-container > div {
   width: 100%;
   height: 6rem;
-  margin-top: 8rem;
+  margin-top: 7.5rem;
   background-color: #4e150067;
   float: top;
   position: absolute;
@@ -92,11 +94,14 @@ body {
 }
 
 .header-text {
-  padding: 6rem 6rem 3rem 2rem;
+  padding: 5.5rem 6rem 2rem 2rem;
+  background-color: #fff4ec;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.header-text {
-  background-color: #eee;
+.header-text > :first-child {
+  padding-bottom: 1rem;
 }
 
 form {
@@ -104,8 +109,12 @@ form {
   box-shadow: var(--shadow-color) 0px 2px 3px 0px;
 }
 
-button ~ p {
-  padding-left: 2rem;
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -115,18 +124,40 @@ ul {
 li {
   display: flex;
   gap: 3rem;
+  padding-bottom: 0.8rem;
 }
 
 li > div {
   display: flex;
   flex-direction: column;
+  gap: 0;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+input {
+  font-size: 0.8rem;
+  height: 1.2rem;
+  border: 1.5px solid var(--shadow-color);
+  border-radius: 2px;
+  padding: 2px 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+input:focus {
+  border: 1.5px solid rgb(255, 153, 0);
+  box-shadow: var(--shadow-color) 1.5px 1.5px 2px 0px;
 }
 
 button {
   width: 9rem;
   margin: 1.5rem 2rem;
   padding: 0.1rem;
-  background-color: #ca713e;
+  background-color: var(--dull-orange);
   color: white;
   box-shadow: var(--shadow-color) 1.5px 1.5px 2px 0px;
   border-radius: 4px;
@@ -139,4 +170,15 @@ button:hover {
 
 button:active {
   transform: scale(0.97);
+}
+
+button ~ p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.login-link {
+  color: var(--dull-orange);
+  text-decoration: none;
 }
